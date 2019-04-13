@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="linq2sqldemodata" Class="LinqDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=decairepc;Initial Catalog=linq2sqldemodata;Integrated Security=True" SettingsObjectName="SampleLinq2SqlUnitTesting.Properties.Settings" SettingsPropertyName="linq2sqldemodataConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Department" Member="Departments">
+    <Type Name="Department">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Department_Employee" Member="Employees" ThisKey="ID" OtherKey="Department" Type="Employee" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Employee" Member="Employees">
+    <Type Name="Employee">
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Department" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Department_Employee" Member="Department1" ThisKey="Department" OtherKey="ID" Type="Department" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

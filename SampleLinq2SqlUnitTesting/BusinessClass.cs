@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SampleLinq2SqlUnitTesting
 {
-    public class Class1
+    public class BusinessClass
     {
+
     }
 }
