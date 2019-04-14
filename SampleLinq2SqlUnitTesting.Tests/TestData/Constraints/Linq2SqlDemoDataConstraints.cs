@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using HelperLibrary;
+using UnitTestHelperLibrary;
 
 namespace ApplicationUnderTest.Linq2SqlDemoData.Constraints
 {

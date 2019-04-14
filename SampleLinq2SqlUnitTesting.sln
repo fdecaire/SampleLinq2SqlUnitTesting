@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleLinq2SqlUnitTesting", "SampleLinq2SqlUnitTesting\SampleLinq2SqlUnitTesting.csproj", "{2F7B7D33-3A00-4E45-999C-EA800B4FCD44}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleLinq2SqlUnitTesting.Tests", "SampleLinq2SqlUnitTesting.Tests\SampleLinq2SqlUnitTesting.Tests.csproj", "{0418A612-C056-46FA-A6DD-089C13DA364A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2F7B7D33-3A00-4E45-999C-EA800B4FCD44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F7B7D33-3A00-4E45-999C-EA800B4FCD44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F7B7D33-3A00-4E45-999C-EA800B4FCD44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0418A612-C056-46FA-A6DD-089C13DA364A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0418A612-C056-46FA-A6DD-089C13DA364A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0418A612-C056-46FA-A6DD-089C13DA364A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0418A612-C056-46FA-A6DD-089C13DA364A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
