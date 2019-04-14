@@ -10,7 +10,7 @@ namespace SampleLinq2SqlUnitTesting
     {
         public List<string> GetAllEmployeeNames()
         {
-            using (var db = new LinqDataClassesDataContext())
+            using (var db = new LinqDataClassesDataContext(DatabaseConnectionString.Get()))
             {
                 var result = (from e in db.Employees select e.LastName + ", " + e.FirstName).ToList();
 
