@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<databases>
+  <database name="Linq2SqlDemoData">
+    <employee ID="1" FirstName="Joe" LastName="Cool" Department="1" />
+    <employee ID="2" FirstName="Jane" LastName="Whipple" Department="2" />
+    <employee ID="3" FirstName="Mark" LastName="Delaney" Department="2" />
+    <employee ID="4" FirstName="Sue" LastName="Smith" Department="3" />
+  </database>
+</databases>
