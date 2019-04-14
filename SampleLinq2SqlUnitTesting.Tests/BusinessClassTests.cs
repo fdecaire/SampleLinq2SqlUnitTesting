@@ -6,6 +6,12 @@ namespace SampleLinq2SqlUnitTesting.Tests
     [TestClass]
     public class BusinessClassTests
     {
+        [TestCleanup]
+        public void Cleanup()
+        {
+            UnitTestHelpers.TruncateData();
+        }
+
         [TestMethod]
         public void AllEmployeesTest()
         {
