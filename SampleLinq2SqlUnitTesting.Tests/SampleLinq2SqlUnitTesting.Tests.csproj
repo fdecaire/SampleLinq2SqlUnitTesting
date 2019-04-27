@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="AssemblyUnitTestShared.cs" />
     <Compile Include="TestData\Constraints\Linq2SqlDemoDataConstraints.cs" />
+    <Compile Include="TestData\Functions\StripWWWandCom_dbo.cs" />
     <Compile Include="TestData\TableGeneratorCode\Linq2SqlDemoDataTableGeneratorCode.cs" />
     <Compile Include="BusinessClassTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

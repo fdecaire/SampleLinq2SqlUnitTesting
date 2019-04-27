@@ -1,8 +1,7 @@
-using System;
-using UnitTestHelperLibrary;
 using System.Collections.Generic;
+using UnitTestHelperLibrary;
 
-namespace DataLayer.Linq2SqlDemoData.TableGenerator
+namespace SampleLinq2SqlUnitTesting.Tests.TestData.TableGeneratorCode
 {
 	// DO NOT MODIFY! This code is auto-generated.
 	public partial class Linq2SqlDemoDataTables

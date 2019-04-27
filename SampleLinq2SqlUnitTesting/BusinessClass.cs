@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SampleLinq2SqlUnitTesting
 {
@@ -15,6 +12,14 @@ namespace SampleLinq2SqlUnitTesting
                 var result = (from e in db.Employees select e.LastName + ", " + e.FirstName).ToList();
 
                 return result;
+            }
+        }
+
+        public string StripWWWAndCom(string url)
+        {
+            using (var db = new LinqDataClassesDataContext(DatabaseConnectionString.Get()))
+            {
+                return db.ExecuteQuery<string>($"SELECT dbo.StripWWWandCom('{url}')").FirstOrDefault();
             }
         }
     }

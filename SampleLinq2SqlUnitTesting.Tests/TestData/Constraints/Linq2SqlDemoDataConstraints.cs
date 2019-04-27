@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnitTestHelperLibrary;
 
-namespace ApplicationUnderTest.Linq2SqlDemoData.Constraints
+namespace SampleLinq2SqlUnitTesting.Tests.TestData.Constraints
 {
 	public class Linq2SqlDemoDataConstraints
 	{

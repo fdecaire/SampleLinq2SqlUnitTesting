@@ -22,5 +22,14 @@ namespace SampleLinq2SqlUnitTesting.Tests
 
             Assert.AreEqual(4,allEmployeeNames.Count);
         }
+
+        [TestMethod]
+        public void FunctionTest()
+        {
+            var businessClass = new BusinessClass();
+            var result = businessClass.StripWWWAndCom("www.test.com");
+
+            Assert.AreEqual("test",result);
+        }
     }
 }

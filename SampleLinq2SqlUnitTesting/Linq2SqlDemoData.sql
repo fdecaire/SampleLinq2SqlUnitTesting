@@ -145,7 +145,20 @@ GO
 ALTER TABLE [dbo].[Employee] CHECK CONSTRAINT [FK_EmployeeDepartment]
 GO
 
+CREATE FUNCTION dbo.StripWWWandCom (@input VARCHAR(250))
+RETURNS VARCHAR(250)
+AS BEGIN
+    DECLARE @Work VARCHAR(250)
 
+    SET @Work = @Input
+
+    SET @Work = REPLACE(@Work, 'www.', '')
+    SET @Work = REPLACE(@Work, '.com', '')
+
+    RETURN @work
+END
+
+GO
 
 -- insert test data here
 INSERT INTO Department (Name) values ('Sales')
