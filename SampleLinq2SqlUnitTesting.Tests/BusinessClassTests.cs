@@ -31,5 +31,16 @@ namespace SampleLinq2SqlUnitTesting.Tests
 
             Assert.AreEqual("test",result);
         }
+
+        [TestMethod]
+        public void StoredProcedureTest()
+        {
+            UnitTestHelpers.ExecuteSQLCode("SampleLinq2SqlUnitTesting.Tests.TestData.PopulateDepartmentTable.sql", "Linq2SqlDemoData");
+
+            var businessClass = new BusinessClass();
+            var result = businessClass.GetAllDepartments();
+
+            Assert.AreEqual(3, result.Count);
+        }
     }
 }

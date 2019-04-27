@@ -22,5 +22,13 @@ namespace SampleLinq2SqlUnitTesting
                 return db.ExecuteQuery<string>($"SELECT dbo.StripWWWandCom('{url}')").FirstOrDefault();
             }
         }
+
+        public List<Department> GetAllDepartments()
+        {
+            using (var db = new LinqDataClassesDataContext(DatabaseConnectionString.Get()))
+            {
+                return db.ExecuteQuery<Department>("exec AllDepartments").ToList();
+            }
+        }
     }
 }

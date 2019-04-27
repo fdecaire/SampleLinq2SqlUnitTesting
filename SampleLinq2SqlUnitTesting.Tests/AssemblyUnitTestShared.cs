@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SampleLinq2SqlUnitTesting.Tests.TestData.Functions;
+using SampleLinq2SqlUnitTesting.Tests.TestData.StoredProcedures;
 using SampleLinq2SqlUnitTesting.Tests.TestData.TableGeneratorCode;
 using UnitTestHelperLibrary;
 
@@ -16,6 +17,7 @@ namespace SampleLinq2SqlUnitTesting.Tests
             // create tables
             UnitTestHelpers.CreateAllTables(Linq2SqlDemoDataTables.TableList, Linq2SqlDemoDataTables.DatabaseName);
             StripWWWandCom.Instance.CreateStoredProcedure();
+            AllDepartments.Instance.CreateStoredProcedure();
         }
 
         [AssemblyCleanup]

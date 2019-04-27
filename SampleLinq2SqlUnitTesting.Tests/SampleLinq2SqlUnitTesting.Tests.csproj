@@ -50,14 +50,15 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="UnitTestHelperLibrary, Version=1.1.4.0, Culture=neutral, PublicKeyToken=98e6447001beca64, processorArchitecture=MSIL">
-      <HintPath>..\packages\UnitTestHelperLibrary.1.1.4\lib\net461\UnitTestHelperLibrary.dll</HintPath>
+    <Reference Include="UnitTestHelperLibrary, Version=1.1.5.0, Culture=neutral, PublicKeyToken=98e6447001beca64, processorArchitecture=MSIL">
+      <HintPath>..\packages\UnitTestHelperLibrary.1.1.5\lib\net461\UnitTestHelperLibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyUnitTestShared.cs" />
     <Compile Include="TestData\Constraints\Linq2SqlDemoDataConstraints.cs" />
     <Compile Include="TestData\Functions\StripWWWandCom_dbo.cs" />
+    <Compile Include="TestData\StoredProcedures\AllDepartments_dbo.cs" />
     <Compile Include="TestData\TableGeneratorCode\Linq2SqlDemoDataTableGeneratorCode.cs" />
     <Compile Include="BusinessClassTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,6 +77,9 @@
     <EmbeddedResource Include="TestData\DefaultData.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestData\PopulateDepartmentTable.sql" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
